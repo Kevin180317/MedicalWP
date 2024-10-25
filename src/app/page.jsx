@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import axios from "axios";
-import { Button } from "@/components/ui/button";
 
 function Page() {
   const [newUser, setNewUser] = useState({ name: "", email: "", password: "" });
@@ -65,12 +64,12 @@ function Page() {
           onChange={(e) => setNewUser({ ...newUser, password: e.target.value })}
           className="w-full p-2 mb-4 border border-gray-300 rounded"
         />
-        <Button
+        <button
           onClick={addUser}
           className="w-full p-2 text-white bg-blue-500 rounded hover:bg-blue-600"
         >
           Add User
-        </Button>
+        </button>
       </div>
     </div>
   );
